@@ -1,71 +1,91 @@
-<svg width="1200" height="330" viewBox="0 0 1200 330" xmlns="http://www.w3.org/2000/svg">
+<svg width="1280" height="430" viewBox="0 0 1280 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Frank Bernaola - Full Stack Web Developer">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f8fafc"/>
-      <stop offset="100%" stop-color="#e2e8f0"/>
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EAF1F8"/>
     </linearGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#0284c7" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#0284c7" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
     </linearGradient>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M42 0H0V42" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#CBD5E1" stroke-width="1"/>
     </pattern>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
   </defs>
 
-  <rect width="1200" height="330" rx="28" fill="url(#bg)"/>
-  <rect width="1200" height="330" rx="28" fill="url(#grid)" opacity="0.55"/>
+  <rect width="1280" height="430" rx="30" fill="url(#bg)"/>
+  <rect width="1280" height="430" rx="30" fill="url(#grid)" opacity="0.46"/>
 
-  <g opacity="0.22">
-    <circle cx="90" cy="70" r="4" fill="#0284c7">
-      <animate attributeName="r" values="3;7;3" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1110" cy="245" r="4" fill="#0284c7">
-      <animate attributeName="r" values="6;3;6" dur="4s" repeatCount="indefinite"/>
-    </circle>
-    <text x="70" y="260" font-family="monospace" font-size="42" fill="#0284c7">&lt;/&gt;</text>
-    <text x="1055" y="95" font-family="monospace" font-size="38" fill="#0284c7">{ }</text>
-  </g>
-
-  <rect x="-360" y="0" width="360" height="330" fill="url(#line)" opacity="0.16">
-    <animate attributeName="x" values="-360;1200" dur="6s" repeatCount="indefinite"/>
+  <!-- Animated scan -->
+  <rect x="-420" y="0" width="420" height="430" fill="url(#scan)">
+    <animate attributeName="x" values="-420;1280" dur="7s" repeatCount="indefinite"/>
   </rect>
 
-  <text x="600" y="105" text-anchor="middle"
-        font-family="Arial, Helvetica, sans-serif" font-size="20"
-        letter-spacing="7" fill="#0284c7" font-weight="700">
+  <!-- Left code window -->
+  <rect x="70" y="82" width="330" height="255" rx="20" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <circle cx="102" cy="112" r="7" fill="#EF4444"/>
+  <circle cx="126" cy="112" r="7" fill="#F59E0B"/>
+  <circle cx="150" cy="112" r="7" fill="#22C55E"/>
+  <text x="100" y="158" font-family="monospace" font-size="17" fill="#475569">const developer = &#123;</text>
+  <text x="120" y="190" font-family="monospace" font-size="17" fill="#0284C7">focus:</text>
+  <text x="190" y="190" font-family="monospace" font-size="17" fill="#0F172A">"Full Stack Web",</text>
+  <text x="120" y="221" font-family="monospace" font-size="17" fill="#0284C7">builds:</text>
+  <text x="190" y="221" font-family="monospace" font-size="17" fill="#0F172A">"end-to-end apps",</text>
+  <text x="120" y="252" font-family="monospace" font-size="17" fill="#0284C7">deploys:</text>
+  <text x="204" y="252" font-family="monospace" font-size="17" fill="#0F172A">true</text>
+  <text x="100" y="283" font-family="monospace" font-size="17" fill="#475569">&#125;;</text>
+  <rect x="99" y="303" width="12" height="22" rx="2" fill="#0284C7">
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Main identity -->
+  <text x="470" y="120" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="5" fill="#0284C7">
     FULL STACK WEB DEVELOPER
   </text>
 
-  <text x="600" y="170" text-anchor="middle"
-        font-family="Arial, Helvetica, sans-serif" font-size="49"
-        fill="#0f172a" font-weight="800">
+  <text x="470" y="188" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" fill="#0F172A">
     FRANK BERNAOLA
   </text>
 
-  <g font-family="monospace" font-size="21" text-anchor="middle" fill="#475569">
-    <text x="600" y="220" opacity="1">
-      React · Next.js · NestJS · PostgreSQL · Docker
-      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.42;0.50;0.92;1" dur="8s" repeatCount="indefinite"/>
-    </text>
-    <text x="600" y="220" opacity="0">
-      Frontend · Backend · APIs · Databases · VPS
-      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.42;0.50;0.92;1" dur="8s" repeatCount="indefinite"/>
-    </text>
+  <text x="470" y="229" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#475569">
+    Frontend · Backend · APIs · Databases · Docker · VPS
+  </text>
+
+  <!-- Chips -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">
+    <rect x="470" y="267" width="120" height="38" rx="19" fill="#EEF2FF" stroke="#CBD5E1"/>
+    <text x="530" y="291" text-anchor="middle" fill="#0F172A">React / Next</text>
+
+    <rect x="603" y="267" width="114" height="38" rx="19" fill="#EEF2FF" stroke="#CBD5E1"/>
+    <text x="660" y="291" text-anchor="middle" fill="#0F172A">NestJS / .NET</text>
+
+    <rect x="730" y="267" width="112" height="38" rx="19" fill="#EEF2FF" stroke="#CBD5E1"/>
+    <text x="786" y="291" text-anchor="middle" fill="#0F172A">PostgreSQL</text>
+
+    <rect x="855" y="267" width="92" height="38" rx="19" fill="#EEF2FF" stroke="#CBD5E1"/>
+    <text x="901" y="291" text-anchor="middle" fill="#0F172A">Docker</text>
   </g>
 
-  <g filter="url(#glow)">
-    <rect x="385" y="260" width="430" height="2" rx="1" fill="url(#line)">
-      <animate attributeName="width" values="140;430;140" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="x" values="530;385;530" dur="4s" repeatCount="indefinite"/>
-    </rect>
-  </g>
+  <!-- Animated status -->
+  <circle cx="481" cy="337" r="7" fill="#22C55E" filter="url(#glow)">
+    <animate attributeName="r" values="6;10;6" dur="2.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.55;1" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="501" y="343" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#475569">
+    Building production-ready web applications
+  </text>
 
-  <rect x="0.75" y="0.75" width="1198.5" height="328.5" rx="27.25"
-        fill="none" stroke="#0284c7" stroke-opacity="0.28" stroke-width="1.5"/>
+  <rect x="0.8" y="0.8" width="1278.4" height="428.4" rx="29.2" fill="none" stroke="#0284C7" stroke-opacity="0.20" stroke-width="1.6"/>
 </svg>
