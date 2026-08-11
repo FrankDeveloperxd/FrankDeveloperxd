@@ -66,7 +66,7 @@ Desarrollador web orientado a **Full Stack**, con experiencia construyendo aplic
       <p align="center"><strong>IoT · MQTT · Dashboards · Real-time</strong></p>
     </td>
     <td width="50%" valign="top">
-      <img src="./assets/projects/computer-vision.svg" alt="Computer Vision" width="100%">
+      <img src="./assets/projects/computer-vision-fixed.svg" alt="Computer Vision" width="100%">
       <h3 align="center">Computer Vision</h3>
       <p>
         Solución de detección de personas con entrenamiento y validación de modelos,
